@@ -1,0 +1,9 @@
+DESCRIPTION EACH WEBPAGE (Explained by Eijie Flores)
+
+Login Page [$route login] - this is where the user would log in to their accounts using their student number and password.
+
+Register Page [$route login] - This page is meant for registration to have an account. It needs a student number, Email, and password to complete the account creation.
+
+COR Upload Page [$route psched]  This page is where the user would upload or submit their COR.
+
+Login Page [$route save]  - This is where the user could create their schedule based on the subjects they have in their COR. This is where This allows the user to edit or apply changes to the schedule that he/she created. They could add subjects to their COR that didn't appear when they first created and edited their schedule.

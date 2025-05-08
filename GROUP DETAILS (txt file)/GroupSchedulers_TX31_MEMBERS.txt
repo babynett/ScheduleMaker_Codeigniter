@@ -1,0 +1,21 @@
+GROUP NAME: Schedulers
+Section TX31
+
+MEMBERS: 
+
+Faye Angelie Torreta - Leader (did all the coding/ source code and design)
+Eijie Flores - did all the descriptions of each webpage
+Johanne De Castro - explained the reason for having a FEU Tech COR scheduler system
+Ralph Pineda - explained the reason for having a FEU Tech COR scheduler system
+
+:>
+
+Routes:
+
+localhost:8000/start = will direct you to the start page
+localhost:8000/login = directs you  automatically to the login page
+
+PROBLEMS encountered:
+
+During the CRUD in $route save, the data will be saved and inserted in the database however it takes too long to fetch the data.
+Click the back button in your browser a few times and click save.  
