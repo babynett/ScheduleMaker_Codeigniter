@@ -1,70 +1,86 @@
-###################
-What is CodeIgniter
-###################
+📅 Schedule Maker – CRUD Scheduler with Login System
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Schedule Maker is a simple yet effective web application built with CodeIgniter, HTML, and CSS. It allows users to create, read, update, and delete (CRUD) schedules with basic authentication functionality.
 
-*******************
-Release Information
-*******************
+🔧 Features
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+👤 User Features
 
-**************************
-Changelog and New Features
-**************************
+User Authentication: Secure login and signup system to manage individual schedules.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+CRUD for Schedules:
 
-*******************
-Server Requirements
-*******************
+Create: Add new schedule entries (e.g., meetings, tasks, reminders)
 
-PHP version 5.6 or newer is recommended.
+Read: View your full list of scheduled items
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+Update: Edit any existing schedule details
 
-************
-Installation
-************
+Delete: Remove schedules no longer needed
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+🖥️ UI & UX
 
-*******
-License
-*******
+Clean, minimal interface built with vanilla HTML and CSS
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+Responsive and user-friendly design
 
-*********
-Resources
-*********
+🧰 Tech Stack
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+Framework: CodeIgniter (PHP-based MVC)
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+Frontend: HTML and CSS
 
-***************
-Acknowledgement
-***************
+Local Server: XAMPP (Apache + MySQL)
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+⚙️ How to Run the Project
+
+🔽 Prerequisites
+
+XAMPP installed (https://www.apachefriends.org/)
+
+Place project folder inside htdocs
+
+📝 Setup Steps
+
+Start Apache and MySQL via XAMPP Control Panel
+
+Import the Database:
+
+Open phpMyAdmin (http://localhost/phpmyadmin)
+
+Create a new database (e.g., schedule_db)
+
+Import the .sql file provided in the project folder
+
+Configure Database in CodeIgniter:
+
+Go to application/config/database.php
+
+Set your DB credentials (e.g., username: root, password: '', and database: schedule_db)
+
+Run the Project:
+Open your browser and visit:👉 http://localhost/Main/start
+
+🛠 Folder Structure
+
+application/
+├── controllers/
+│   └── Main.php
+├── models/
+│   └── Schedule_model.php
+├── views/
+│   ├── login.php
+│   ├── signup.php
+│   ├── dashboard.php
+│   └── schedule_form.php
+
+📌 Notes
+
+No external libraries used — pure CodeIgniter MVC pattern
+
+User sessions are handled using native CI session management
+
+Schedule entries are user-specific and secured
+
+👩‍💻 Developer - Faye
+- This was a finals project in college
